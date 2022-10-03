@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="Simple Form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+
+<body>
+    <form class="form py-3 px-4" action="" id="form">
+        <!--Header-->
+        <p class="mb-4">Checkout Form</p>
+        <!--First Name and Last Name-->
+        <div class="row mb-3">
+            <div class="form-group col">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name" id="firstName" required>
+            </div>
+            <div class="form-group col">
+                <label for="firstName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name" id="lastName" required>
+            </div>
+        </div>
+        <!--Address-->
+        <div class="form-group mb-3">
+            <label for="addressOne" class="form-label">Address</label>
+            <input type="text" class="form-control" placeholder="E.g Tychis 25 Perama" id="addressOne" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="addressTwo" class="form-label">Address 2 <span>(optional)</span></label>
+            <input type="text" class="form-control" placeholder="Floor, Studio or Apartment" id="addressTwo">
+        </div>
+        <!--City, State, Zip-->
+        <div class="row mb-3">
+            <div class="form-group col-md-5">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" placeholder="City" id="city" required>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="state" class="form-label">State</label>
+                <input type="text" class="form-control" placeholder="State" id="state" required>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="number" class="form-control" placeholder="Zip" id="zip" required>
+            </div>
+        </div>
+        <!--Contact-->
+        <div class="row mb-3">
+            <div class="form-group col-md-6 ">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="example@user.com" id="email" required>
+            </div>
+            <div class="form-group col-md-6 ">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" placeholder="+30-69xxxxxxxx" id="number" required>
+            </div>
+        </div>
+        <!--Comments-->
+        <div class="form group mb-3">
+            <label for="comments" class="form-label mb-2">Comments</label>
+            <textarea class="form-control" rows="3" placeholder="Leave a comment..." id="comments"></textarea>
+        </div>
+        <div id="button">
+            <button type="button" class="btn btn-dark btn-md mt-2" id="button">Sumbit</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
