@@ -1,1 +1,1 @@
-This repository includes simple checkout/sign-up/log-in forms.
+This repository includes a simple checkout/sign-up form.
